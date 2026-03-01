@@ -34,7 +34,7 @@ export class ProductController {
         if (!file) throw new BadRequestException('No image file provided');
 
         // Return the public URL to be stored in the database
-        const baseUrl = process.env.VITE_API_URL ? process.env.VITE_API_URL.replace('/api', '') : 'http://localhost:3000';
+        const baseUrl = 'backend.kioske.shop';
         return { imageUrl: `${baseUrl}/public/products/${file.filename}` };
     }
 

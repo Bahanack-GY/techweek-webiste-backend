@@ -26,6 +26,6 @@ async function bootstrap() {
     prefix: '/public/',
   });
 
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 3021);
 }
 bootstrap();
